@@ -7,8 +7,9 @@ for (item of btn) {
         btn_text = e.target.innerText;
 
         if (btn_text == "x") {
-            btn_text == "*"
+            btn_text = "*";
         }
+
     result.value += btn_text;
    })
 }
