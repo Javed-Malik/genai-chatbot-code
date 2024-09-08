@@ -1,0 +1,19 @@
+.footer {
+  background-color: #404a5f;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  height: 4vw;
+  font-family: sans-serif;
+  font-size: 2vw; /* Responsive font size */
+  border-bottom: 5px solid #2c3e50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.2vw; /* Responsive letter spacing */
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #404a5f, #2c3e50);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
