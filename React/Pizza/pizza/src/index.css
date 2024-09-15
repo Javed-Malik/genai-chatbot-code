@@ -52,7 +52,7 @@ body {
   display: block;
 }
 
-.header h1::before,
+/* .header h1::before,
 .header h1::after {
   display: block;
   content: "";
@@ -61,7 +61,7 @@ body {
   background-color: #edc84b;
   position: absolute;
   top: calc(50% - 1px);
-}
+} */
 
 .header h1::before {
   left: 0;
