@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import "./styles.css";
 
 const faqs = [
@@ -25,18 +25,27 @@ export default function App() {
 }
 
 function Accordion({ data }) {
+  const [curOpen, setCurOpen] = useState(null);
   return (
     <div className="accordion">
       {data.map((el, i) => (
-        <AccordionItem title={el.title} text={el.text} num={i} key={el.title} />
+        <AccordionItem
+          curOpen={curOpen}
+          onOpen={setCurOpen}
+          title={el.title}
+          text={el.text}
+          num={i}
+          key={el.title}
+        />
       ))}
     </div>
   );
 }
-function AccordionItem({ num, title, text }) {
-  const [isOpen, setIsOpen] = useState(false);
+function AccordionItem({ num, title, text, curOpen, onOpen }) {
+  const isOpen = num === curOpen;
   function handleToggle() {
-    setIsOpen((isOpen) => !isOpen);
+    onOpen(isOpen ? null : num);
+    // setIsOpen((isOpen) => !isOpen);
   }
   return (
     <div className={`item ${isOpen ? "open" : ""}`} onClick={handleToggle}>
