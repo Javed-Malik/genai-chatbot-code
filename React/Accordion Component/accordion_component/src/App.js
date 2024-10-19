@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import "./styles.css";
 
 const faqs = [
@@ -39,10 +39,24 @@ function Accordion({ data }) {
           {el.text}
         </AccordionItem>
       ))}
+      <AccordionItem
+        curOpen={curOpen}
+        onOpen={setCurOpen}
+        title="This is demo children props"
+        num={31}
+        key="This is demo key"
+      >
+        <p>Allow React Developers to: </p>
+        <ul>
+          <li>Break up UI into components</li>
+          <li>Make components reuseable</li>
+          <li>please state efficiently</li>
+        </ul>
+      </AccordionItem>
     </div>
   );
 }
-function AccordionItem({ num, title, text, curOpen, onOpen, children }) {
+function AccordionItem({ num, title, curOpen, onOpen, children }) {
   const isOpen = num === curOpen;
   function handleToggle() {
     onOpen(isOpen ? null : num);
