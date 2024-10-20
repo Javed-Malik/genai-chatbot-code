@@ -1,0 +1,45 @@
+.select-container {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  margin: 1rem 0;
+}
+
+select {
+  appearance: none;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+select:hover {
+  border-color: #007bff;
+}
+
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+select option {
+  padding: 0.5rem;
+}
+
+.select-container::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 1rem;
+  color: #333;
+}

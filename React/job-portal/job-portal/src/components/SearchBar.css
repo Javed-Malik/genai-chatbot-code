@@ -1,0 +1,23 @@
+.search-bar {
+  width: 200px; /* Match the width of the location filter */
+  padding: 0.5rem 1rem;
+  margin: 1rem auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.search-bar::placeholder {
+  color: #999;
+}
