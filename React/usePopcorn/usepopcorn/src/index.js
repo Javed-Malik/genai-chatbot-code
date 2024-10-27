@@ -13,6 +13,7 @@ root.render(
       size="23"
       className="test"
       messages={["Terrible", "Bad", "OK", "Good", "Amazing"]}
+      defaultRating={3}
     />
     <StarRating maxRating={5} />
     {/* <App /> */}

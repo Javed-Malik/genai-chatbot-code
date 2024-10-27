@@ -16,8 +16,9 @@ export default function StarRating({
   size = 25,
   className = "",
   messages = [],
+  defaultRating = 0,
 }) {
-  const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState(defaultRating);
   const [tempRating, setTempRating] = useState(0);
   const textStyle = {
     lineHeight: "1",
