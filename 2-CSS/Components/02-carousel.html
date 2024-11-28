@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel Component</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+      /*
+      main color #087f5b */
+      /* text color #343a40 * */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Inter, sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+      img {
+        height: 200px;
+        border-radius: 8px;
+        transform: scale(1.5);
+        box-shadow: 0 12px 24px rgb(0, 0, 0, 0.3);
+      }
+      .carousel {
+        width: 800px;
+        background-color: #087f5b;
+        margin: 100px auto;
+        border-radius: 8px;
+        color: #fff;
+        padding: 24px;
+        padding-left: 86px;
+
+        display: flex;
+        align-items: center;
+        gap: 86px;
+      }
+      .testimoial-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 32px;
+        color: #e5fcf4;
+      }
+      .testimoial-job {
+        font-size: 12px;
+        color: #c3fae8;
+      }
+      .testimoial-author {
+        font-size: 14px;
+        margin-bottom: 4px;
+        color: #c3fae8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="maria.jpg" alt="Maria de Almeida" />
+      <blockquote class="testimoial">
+        <p class="testimoial-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nam
+          dolorum explicabo a sapiente magni placeat rem voluptatem! Mollitia
+          autem quia dolore repellat dignissimos corporis hic blanditiis magni
+          porro qui?
+        </p>
+        <p class="testimoial-author">Maria de Almeida</p>
+        <p class="testimoial-job">Senior Product Manager at EDP Comercial</p>
+      </blockquote>
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
