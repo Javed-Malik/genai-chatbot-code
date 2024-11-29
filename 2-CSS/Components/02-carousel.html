@@ -46,6 +46,7 @@
         color: #fff;
         padding: 24px;
         padding-left: 86px;
+        position: relative;
 
         display: flex;
         align-items: center;
@@ -67,6 +68,59 @@
         margin-bottom: 4px;
         color: #c3fae8;
       }
+      .btn {
+        background-color: #fff;
+        border: none;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 24px 24px rgb(0, 0, 0, 0.3);
+        cursor: ;
+      }
+
+      .btn--left {
+        /* In relation to PARENTE ELEMENT */
+        left: 0;
+        top: 50%;
+
+        /* In relation to ELEMENT ITSELF */
+        transform: translate(-50%, -50%);
+      }
+
+      .btn--right {
+        top: 50%;
+        right: 0;
+        /* In relation to PARENTE ELEMENT */
+        /* In relation to ELEMENT ITSELF */
+        transform: translate(50%, -50%);
+      }
+      .btn-icon {
+        width: 24px;
+        height: 24px;
+        stroke: #087f5b;
+      }
+      .dots {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 32px);
+
+        display: flex;
+        gap: 12px;
+      }
+
+      .dot {
+        width: 12px;
+        height: 12px;
+        background-color: #fff;
+        border: 2px solid #087f5b;
+        border-radius: 50%;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -82,7 +136,7 @@
         <p class="testimoial-author">Maria de Almeida</p>
         <p class="testimoial-job">Senior Product Manager at EDP Comercial</p>
       </blockquote>
-      <button class="btn">
+      <button class="btn btn--left">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -98,7 +152,7 @@
           />
         </svg>
       </button>
-      <button class="btn">
+      <button class="btn btn--right">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -114,6 +168,12 @@
           />
         </svg>
       </button>
+      <div class="dots">
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
     </div>
   </body>
 </html>
