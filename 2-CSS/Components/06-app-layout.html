@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        color: #343a40;
+        font-size: 24px;
+        display: grid;
+        grid-template-columns: 80px 440px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+        height: 100vh;
+        text-align: center;
+        font-weight: 600;
+      }
+      nav,
+      section,
+      main,
+      aside {
+        padding-top: 24px;
+      }
+
+      nav {
+        background-color: antiquewhite;
+        grid-row: 1/-1;
+        color: #fff;
+      }
+      menu {
+        background-color: #7048e8;
+        color: #fff;
+        grid-column: 2/-1;
+
+        display: flex;
+        padding: 0 40px;
+        align-items: center;
+        gap: 12px;
+      }
+      button {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #5f3dc4;
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+      button:last-child {
+        background-color: #d6336c;
+        margin-left: auto;
+      }
+      aside {
+        background-color: #e9ecef;
+      }
+      section {
+        background-color: #e0ecef;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        overflow: scroll;
+      }
+      .email {
+        background-color: #787d7d;
+        height: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <button>New</button>
+      <button>Reply</button>
+      <button>Forward</button>
+      <button>Mark</button>
+      <button>unread</button>
+      <button>Trash</button>
+    </menu>
+
+    <section>
+      <div class="email">Email 1</div>
+      <div class="email">Email 2</div>
+      <div class="email">Email 3</div>
+      <div class="email">Email 4</div>
+      <div class="email">Email 5</div>
+      <div class="email">Email 6</div>
+      <div class="email">Email 7</div>
+      <div class="email">Email 8</div>
+      <div class="email">Email 9</div>
+      <div class="email">Email 10</div>
+      <div class="email">Email 11</div>
+      <div class="email">Email 12</div>
+      <div class="email">Email 13</div>
+    </section>
+    <main>Email view</main>
+    <aside>Addition info</aside>
+  </body>
+</html>
