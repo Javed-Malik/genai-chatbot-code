@@ -188,6 +188,30 @@ body {
 }
 
 /****************/
+/*  Featured-in-section */
+/****************/
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+.heading-featured-in {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+/****************/
 /* HOW ITS WORK */
 /****************/
 
@@ -268,16 +292,29 @@ body {
   background-color: #fae5d3;
   z-index: -2;
 }
-/* 
-.section-how div:nth-child(1) {
-  background-color: aqua;
+
+/****************/
+/* SECTION MEALS */
+/****************/
+
+.section-meals {
+  padding: 9.6rem 0;
 }
-.section-how div:nth-child(2) {
-  background-color: rgb(43, 255, 0);
+.meal-img {
+  max-width: 100%;
 }
-.section-how div:nth-child(3) {
-  background-color: rgb(240, 229, 14);
+.meal-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 3.2rem;
 }
-.section-how div:nth-child(4) {
-  background-color: rgb(255, 0, 123);
-} */
+.meal-atributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.meal-atribute {
+  font-size: 1.8rem;
+}
