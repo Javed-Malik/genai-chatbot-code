@@ -112,7 +112,7 @@ body {
 .main-nav-list {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 4.8rem;
   list-style: none;
 }
 .main-nav-link:link,
@@ -416,6 +416,7 @@ body {
   align-items: center;
   font-size: 1.8rem;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 .list-icon {
   height: 3rem;
@@ -607,7 +608,6 @@ body {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.25);
   border-radius: 11px;
   overflow: hidden;
-  height: 50rem;
 }
 .cta-text-box {
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
@@ -649,7 +649,7 @@ body {
 .cta-form input,
 .cta-form select {
   font-size: 1.8rem;
-  padding: 1.6rem;
+  padding: 1.2rem;
   width: 100%;
   font-family: inherit;
   color: inherit;
@@ -661,10 +661,6 @@ body {
 
 .cta-form input::placeholder {
   color: #aaa;
-}
-.cta-form select {
-}
-.cta-form btn {
 }
 
 .cta-form *:focus {
