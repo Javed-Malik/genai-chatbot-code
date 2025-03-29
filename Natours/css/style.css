@@ -47,6 +47,7 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 .heading-primary {
   color: #fff;
@@ -72,6 +73,7 @@ body {
   font-weight: 700;
   letter-spacing: 14px;
   animation: moveInRight 2s ease-out;
+  margin-bottom: 60px;
 }
 
 @keyframes moveInLeft {
@@ -101,4 +103,27 @@ body {
     opacity: 1;
     transform: translate(0);
   }
+}
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  display: inline-block;
+  border-radius: 200px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 05px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-white {
+  background-color: #fff;
+  color: #777;
 }
