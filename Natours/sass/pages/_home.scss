@@ -1,0 +1,23 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
+.row {
+  display: flex;
+  width: 100%;
+}
+.row {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  flex-direction: row; /* Arrange items in a row */
+  justify-content: space-between; /* Adjust horizontal alignment */
+  //   height: 100vh; /* Optional: Full viewport height */
+}
+
+.column {
+  flex: 1; /* Equal width for both columns */
+  padding: 10px; /* Add some spacing inside columns */
+  border: 1px solid #ccc; /* Optional: Visual distinction */
+}
